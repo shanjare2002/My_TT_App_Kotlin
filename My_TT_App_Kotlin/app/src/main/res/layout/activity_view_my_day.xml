@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3f51b5"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textShowDate"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="70dp"
+
+        android:background="#0069cc"
+        android:text="Date"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/list_upcoming_events"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+
+        android:layout_below="@+id/textMessage"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textColor="@color/colorSpinnerDefaultText"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textShowDate"
+
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:text="Click above to select different day/date!"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/checkBoxUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="17dp"
+        android:background="@color/colorSpinnerText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="303dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="81dp"
+
+        android:layout_marginBottom="0dp"
+        android:text="To change an item check the checkbox and click on the item above!"
+        android:textAlignment="gravity"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

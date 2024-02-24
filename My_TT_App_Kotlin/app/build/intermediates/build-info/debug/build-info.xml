@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="28"
+    build-mode="HOT_WARM"
+    density="420dpi"
+    format="10"
+    plugin-version="3.2.1"
+    timestamp="1542549065548"
+    token="6756193301855433195"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="502" />
+    <task
+        name="instant-run-dex"
+        duration="49" />
+    <task
+        name="instant-run-transform"
+        duration="40" />
+    <task
+        name="verifier"
+        duration="5" />
+
+    <artifact
+        location="/Android/My_TT_App/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
+
+    <build
+        build-mode="FULL"
+        timestamp="1542480966821"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1542547513029"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1542547749789"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/builds/debug/1542547749789/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1542547852165"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/builds/debug/1542547852165/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1542548318512"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/builds/debug/1542548318512/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1542548351316"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1542548477181"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/builds/debug/1542548477181/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1542549065548"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Android/My_TT_App/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>

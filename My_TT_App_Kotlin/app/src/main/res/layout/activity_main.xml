@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f51b5"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="439dp"
+        android:layout_height="170dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
+        android:animateLayoutChanges="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.225">
+
+        <ListView
+            android:id="@+id/list_upcoming_events"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:textAlignment="center"
+            android:textColor="@color/colorSpinnerDefaultText"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSetMyTT"
+        android:layout_width="156dp"
+        android:layout_height="119dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="#3380e5"
+        android:text="Create My Time Table"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSettings"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewMyDay" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="156dp"
+        android:layout_height="119dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="#3380e5"
+        android:text="Setup My Data"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSetMyTT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonViewMyDay" />
+
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="391dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sunday, 4th of August"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonViewMyDay"
+        android:layout_width="318dp"
+        android:layout_height="108dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="#3380e5"
+        android:text="View My Day"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+</android.support.constraint.ConstraintLayout>

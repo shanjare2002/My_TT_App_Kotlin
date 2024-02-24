@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.shan.my_tt_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Welcome To ISH Timetable Manager"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".SplashActivity"
+            android:label=""
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:label="Welcome to ISH TimeTable Manager!"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Event_Detail_Activity"
+            android:label="Showing the Event Details" />
+        <activity android:name=".TimeTableEntry" />
+        <activity
+            android:name=".ViewMyDay"
+            android:label="This is how your day looks like!"
+            android:theme="@style/AppTheme"
+            />
+    </application>
+
+</manifest>

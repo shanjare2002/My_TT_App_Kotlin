@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f51b5"
+    tools:context=".Event_Detail_Activity">
+
+
+    <TextView
+        android:id="@+id/textTeacher"
+        android:layout_width="215dp"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/textSubJect"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="32dp"
+        android:text="Teacher"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textDateTime"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="16dp"
+        android:text="Time Date"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textFromTime"
+        android:layout_width="70dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/textPeriod"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="-33dp"
+        android:layout_toStartOf="@+id/textPeriod"
+        android:background="#0069cc"
+        android:text="From"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textPeriod"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDateTime"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#0069cc"
+        android:text="Period"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textToTime"
+        android:layout_width="70dp"
+        android:layout_height="38dp"
+        android:layout_below="@+id/textPeriod"
+        android:layout_alignBaseline="@+id/textFromTime"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginRight="81dp"
+        android:background="#0069cc"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textSubJect"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textFromTime"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Subject"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textClass"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textToTime"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="23dp"
+        android:text="Class"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editHomeWork"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/textTeacher"
+        android:layout_marginTop="31dp"
+        android:background="#0069cc"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="No Homework"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editSpecialNotes"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_below="@+id/editHomeWork"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="59dp"
+        android:background="#0069cc"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="No Special Notes"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textToLbl"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textFromTime"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toStartOf="@+id/textToTime"
+        android:text="To"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

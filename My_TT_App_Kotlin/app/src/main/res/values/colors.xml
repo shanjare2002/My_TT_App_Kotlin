@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="colorPrimary">#3380e5</color>
+     <color name="colorPrimaryDark">#33b5e5</color>
+     <color name="colorAccent">#FF4081</color>
+     <color name="colorSpinnerText">@android:color/white</color>
+     <color name="colorSpinnerDefaultText">@android:color/white</color>
+ </resources>

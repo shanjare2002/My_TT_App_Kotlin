@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f51b5"
+    tools:context=".TimeTableEntry">
+
+    <TextView
+        android:id="@+id/textPeiord"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textDay"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:text="Select Period"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerPeriod"
+        style="@android:style/Widget.Spinner"
+        android:layout_width="168dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/spinnerDay"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:theme="@style/spinnerTheme"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:style="@style/Widget.AppCompat.Spinner" />
+
+    <Button
+        android:id="@+id/btnFromTime"
+        android:layout_width="39dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/spinnerPeriod"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/textToTimeShow"
+        android:onClick="showTimePickerDialog"
+        android:text="T"
+        android:textColor="#3032ac"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnToTime"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@+id/btnFromTime"
+        android:layout_alignStart="@+id/btnFromTime"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp"
+        android:onClick="showTimePickerDialog"
+        android:text="T"
+        android:textColor="#3032ac"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222" />
+
+    <TextView
+        android:id="@+id/textToTimeShow"
+        android:layout_width="133dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/textFromTimeShow"
+        android:layout_alignStart="@+id/textFromTimeShow"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:background="#0069cc"
+        android:text="Select Time ->"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textFromTimeShow"
+        android:layout_width="133dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/spinnerPeriod"
+        android:layout_alignStart="@+id/spinnerDay"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="21dp"
+        android:background="#0069cc"
+        android:text="Select Time ->"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerDay"
+        style="@android:style/Widget.Spinner"
+        android:layout_width="168dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:spinnerMode="dropdown"
+        android:theme="@style/spinnerTheme"
+        android:tooltipText="Select Day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:style="@style/Widget.AppCompat.Spinner.DropDown" />
+
+    <Spinner
+        android:id="@+id/spinnerSubject"
+        style="@android:style/Widget.Spinner"
+        android:layout_width="168dp"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/textSubJect"
+        android:layout_alignEnd="@+id/btnFromTime"
+        android:theme="@style/spinnerTheme"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spinnerTeacher"
+        style="@android:style/Widget.Spinner"
+        android:layout_width="168dp"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/textTeacher"
+        android:layout_alignEnd="@+id/btnFromTime"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:spinnerMode="dropdown"
+        android:theme="@style/spinnerTheme" />
+
+    <Spinner
+        android:id="@+id/spinnerClassroom"
+        style="@android:style/Widget.Spinner"
+        android:layout_width="168dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/spinnerTeacher"
+        android:layout_alignEnd="@+id/btnFromTime"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        android:spinnerMode="dropdown"
+        android:theme="@style/spinnerTheme"/>
+
+
+    <TextView
+        android:id="@+id/textDay"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/spinnerDay"
+        android:layout_marginStart="16dp"
+        android:text="Select Day"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textFromTime"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textPeiord"
+        android:layout_alignStart="@+id/textDay"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="23dp"
+        android:text="From Time"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textToTime"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:layout_alignStart="@+id/textDay"
+        android:layout_alignTop="@+id/btnToTime"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="To Time"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textSubJect"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textToTime"
+        android:layout_alignStart="@+id/textDay"
+        android:layout_marginTop="22dp"
+        android:text="Select Subject"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTeacher"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:layout_alignStart="@+id/textDay"
+        android:layout_alignTop="@+id/textSubJect"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="54dp"
+        android:text="Select Teacher"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textClassroom"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/textTeacher"
+        android:layout_alignStart="@+id/textDay"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="31dp"
+        android:text="Select Room"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonSaveTT"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textClassroom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="#3380e5"
+        android:text="Save Time Table Entry"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

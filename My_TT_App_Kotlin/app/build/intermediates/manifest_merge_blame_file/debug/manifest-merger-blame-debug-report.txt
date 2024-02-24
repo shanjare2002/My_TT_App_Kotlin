@@ -1,0 +1,86 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.shan.my_tt_app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:6:5-42:19
+12        android:allowBackup="true"
+12-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:7:9-35
+13        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+13-->[com.android.support:support-compat:28.0.0] C:\Users\Afaq Qasim\.gradle\caches\transforms-3\4057b98856dd29f2a273bad3edaef118\transformed\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:8:9-43
+16        android:label="Welcome To ISH Timetable Manager"
+16-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:9:9-57
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:10:9-54
+18        android:supportsRtl="true"
+18-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:11:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:12:9-40
+21        <activity
+21-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:14:9-23:20
+22            android:name="com.example.shan.my_tt_app.SplashActivity"
+22-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:15:13-43
+23            android:exported="true"
+23-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:17:13-36
+24            android:label="" >
+24-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:16:13-29
+25            <intent-filter>
+25-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:18:13-22:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:19:17-69
+26-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:19:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:21:17-77
+28-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:21:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:24:9-32:20
+32            android:name="com.example.shan.my_tt_app.MainActivity"
+32-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:25:13-41
+33            android:exported="true"
+33-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:28:13-36
+34            android:label="Welcome to ISH TimeTable Manager!"
+34-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:27:13-62
+35            android:theme="@style/AppTheme" >
+35-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:26:13-44
+36            <intent-filter>
+36-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:29:13-31:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:19:17-69
+37-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:19:25-66
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:33:9-35:57
+41            android:name="com.example.shan.my_tt_app.Event_Detail_Activity"
+41-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:34:13-50
+42            android:label="Showing the Event Details" />
+42-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:35:13-54
+43        <activity android:name="com.example.shan.my_tt_app.TimeTableEntry" />
+43-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:36:9-52
+43-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:36:19-49
+44        <activity
+44-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:37:9-41:15
+45            android:name="com.example.shan.my_tt_app.ViewMyDay"
+45-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:38:13-38
+46            android:label="This is how your day looks like!"
+46-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:39:13-61
+47            android:theme="@style/AppTheme" />
+47-->E:\CompleteProects\Fiver Work\My_TT_App\app\src\main\AndroidManifest.xml:40:13-44
+48    </application>
+49
+50</manifest>
